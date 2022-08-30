@@ -10,7 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-public class creditCardService implements ICreditCardService {
+public class CreditCardService implements ICreditCardService {
     private Double fee;
     @Autowired
     private CreditCardMapper cardMapper;
