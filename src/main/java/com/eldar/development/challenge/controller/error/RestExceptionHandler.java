@@ -17,7 +17,7 @@ import java.util.Arrays;
 public class RestExceptionHandler extends ResponseEntityExceptionHandler {
 
     @ExceptionHandler(value = {AmountExceededException.class})
-    protected ResponseEntity<Object> handleAmoutExceeded(RuntimeException ex, WebRequest request) {
+    protected ResponseEntity<Object> handleAmountExceeded(RuntimeException ex, WebRequest request) {
         ApiErrorResponse error = new ApiErrorResponse(
                 HttpStatus.BAD_REQUEST,
                 ex.getMessage()
